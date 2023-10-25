@@ -1,0 +1,17 @@
+{
+  "name": "tailwind_food_ninja",
+  "version": "1.0.0",
+  "description": "",
+  "main": "postcss.config.js",
+  "dependencies": {
+    "autoprefixer": "^10.2.1",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.0.2"
+  },
+  "scripts": {
+    "build-css": "postcss src/tailwind.css -o build/style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

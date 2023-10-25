@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <title>Product Settings</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body style="font-size: 16px" class="bg-gray-400 antialiased font-sans text-gray-900 px-4">
+    <form class="rounded-lg mx-auto max-w-2xl w-full mt-32 shadow-lg bg-white border-t-4 border-teal-600">
+        <div class="px-8 pt-8 pb-4 space-y-6">
+            <div class="mb-16 flex justify-between items-start">
+                <div>
+                    <h1 class="text-4xl font-bold">Product Settings</h1>
+                    <p class="text-gray-600">Changes you make will be visible to other users</p>
+                </div>
+                <button class="text-gray-600 hover:text-gray-800 px-2">
+                    <!--x icon, all svg from https://heroicons.com/-->
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+                </button>
+                
+            </div>
+            <div>
+                <label class="mb-2 block" for="title">Title</label>
+                <input value="Laptop" type="text" id="title"
+                    class="px-4 py-2 w-full rounded border border-gray-400 bg-gray-100 focus:outline-none focus:border-teal-500 block" />
+            </div>
+            <div>
+                <p class="mb-2">Product Features</p>
+                <ul class="space-y-4">
+                    <li class="space-x-2 flex">
+                        <input type="text" value="Fast"
+                            class="px-4 py-2 rounded border border-gray-400 bg-gray-100 focus:outline-none focus:border-teal-500 max-w-sm w-full" />
+
+                        <button type="button" class="text-gray-600 hover:text-gray-800 px-2"">
+                            <!-- Trash icon, all svg from https://heroicons.com/ -->
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" /></svg>
+                        </button>
+                    </li>
+                    <li class="space-x-2 flex">
+                        <input type="text" value="Cheap"
+                            class="px-4 py-2 rounded border border-gray-400 bg-gray-100 focus:outline-none focus:border-teal-500 max-w-sm w-full" />
+
+                        <button type="button" class="text-gray-600 hover:text-gray-800 px-2">
+                            <!-- Trash icon, all svg from https://heroicons.com/ -->
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" /></svg>
+                        </button>
+                    </li>
+                    <li class="space-x-2 flex">
+                        <input type="text" value="Perfect Quality"
+                            class="px-4 py-2 rounded border border-gray-400 bg-gray-100 focus:outline-none focus:border-teal-500 max-w-sm w-full" />
+                        <button type="button" class="text-gray-600 hover:text-gray-800 px-2">
+                            <!-- Trash icon, all svg from https://heroicons.com/ -->
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" /></svg>
+                        </button>
+                    </li>
+                </ul>
+                <button class="mt-4 text-teal-600 flex items-center py-2" type="button">
+                    <!-- + icon, all svg from https://heroicons.com/ -->
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 mr-2"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" /></svg>
+                    Add another feature
+                </button>
+            </div>
+        </div>
+        <div class="px-8 py-6 flex justify-between bg-gray-100 rounded-b-lg">
+            <button type="button" class="font-semibold text-teal-600">Delete</button>
+            <div class="flex space-x-4">
+                <button type="button" class="font-semibold border-2 border-gray-300 px-4 py-2 rounded text-teal-600">Cancel</button>
+                <button type="button" class="font-semibold bg-teal-600 px-4 py-2 text-white rounded">Update Product</button>
+            </div>
+            
+        </div>
+    </form>
+</body>
+
+</html>
